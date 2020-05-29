@@ -26,3 +26,45 @@ object PythonGatewayServer {
       println(s"Started PythonGatewayServer on port $boundPort")
     }
 }
+
+
+
+
+// object PythonPy4JUtil {
+
+//     def createGatewayServer(port: Int, entryPoint: Any, authToken: String,
+//       trustedPreCommandHooks: Seq[Runnable],
+//      pinnedThreadMode: Boolean) : GatewayServer = {
+
+//     if (pinnedThreadMode) {
+//       throw new UnsupportedOperationException("Py4J pinned mode is not supported in this version")
+//     } else {
+//       println("Using default multithreaded mode in Py4J")
+//       new py4j.GatewayServer.GatewayServerBuilder()
+//         .javaPort(port)
+//         .entryPoint(entryPoint)
+//         .authToken(authToken)
+//         // .securityManager(securityManager)
+//         // .trustedPreCommandHooks(trustedPreCommandHooks.toList.asJava)
+//         .build()
+//     }
+//   }
+
+  // def createGatewayServer(port: Int, entryPoint: Any, authToken: String,
+  //   securityManager: Py4JSecurityManager, trustedPreCommandHooks: Seq[Runnable],
+  //   pinnedThreadMode: Boolean) : GatewayServer = {
+
+  //   if (pinnedThreadMode) {
+  //     throw new UnsupportedOperationException("Py4J pinned mode is not supported in this version")
+  //   } else {
+  //     logInfo("Using default multithreaded mode in Py4J")
+  //     new py4j.GatewayServer.GatewayServerBuilder()
+  //       .javaPort(port)
+  //       .entryPoint(entryPoint)
+  //       .authToken(authToken)
+  //       .securityManager(securityManager)
+  //       .trustedPreCommandHooks(trustedPreCommandHooks.toList.asJava)
+  //       .build()
+  //   }
+  // }
+// }
