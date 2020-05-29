@@ -21,3 +21,5 @@ version := "1.0"
 
 // You can define other libraries as dependencies in your build like this:
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0"
+// https://mvnrepository.com/artifact/net.sf.py4j/py4j
+libraryDependencies += "net.sf.py4j" % "py4j" % "0.10.9"
